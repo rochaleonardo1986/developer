@@ -1,32 +1,34 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
+src/*.exe
+src/bitmilliongold
+src/bitmilliongoldd
+src/test_bitmilliongold
+.*.swp
+*.*~*
+*.bak
+*.rej
+*.orig
 *.o
-*.obj
+*.patch
+.bitmilliongold
 
-# Precompiled Headers
-*.gch
-*.pch
+# Compilation and Qt preprocessor part
+*.qm
+Makefile
+bitmilliongold-qt
+BitmillionGold-Qt.app
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Unit-tests
+Makefile.test
+bitmilliongold-qt_test
 
-# Fortran module files
-*.mod
-*.smod
+# Resources cpp
+qrc_*.cpp
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# Qt creator
+*.pro.user
 
-# Executables
-*.exe
-*.out
-*.app
+# Mac specific
+.DS_Store
+build
+
+!src/leveldb*/Makefile
